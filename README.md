@@ -2,7 +2,8 @@
 
 # Catonaut
 
-A browser extension builder with Astro
+A browser extension builder with Astro  
+[Bun version here](https://github.com/AminoffZ/catonaut) 🤍
 
 ## 🌟 Features
 
