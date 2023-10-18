@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
     "types": [
-      "bun-types", // add Bun type definitions
       "./types.d.ts", // add your own type definitions
       "@types/chrome"
     ],
-
+    "outDir": "lib", // output directory
     // enable latest features
     "lib": ["esnext"],
     "module": "esnext",
@@ -13,8 +12,8 @@
 
     // if TS 5.x+
     "moduleResolution": "bundler",
-    "noEmit": true,
-    "allowImportingTsExtensions": true,
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
     "moduleDetection": "force",
     // if TS 4.x or earlier
     // "moduleResolution": "nodenext",

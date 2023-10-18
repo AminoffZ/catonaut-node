@@ -2,12 +2,11 @@
 
 # Catonaut
 
-A browser extension builder with Astro and Bun
+A browser extension builder with Astro
 
 ## 🌟 Features
 
 - 📘 Typescript for a better developer experience
-- 🚄 Bun for blazing fast development
 - ⏱ Manifest version 3 (MV3) for priority publishing
 - 🚀 Astro enabling flexible popup design
 - 🐱‍🏍 Cool Mascot
@@ -18,8 +17,6 @@ Make sure you have some understanding of extension development. Here are some re
 
 - [Chrome](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/)
 - [Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension)
-- Windows Users
-  - Until [this](https://github.com/oven-sh/bun/issues/43) is resolved, Bun is not supported on Windows. [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) is a workaround.
 
 ## 🛠️ Setup
 
@@ -28,7 +25,7 @@ Make sure you have some understanding of extension development. Here are some re
 Use the template or clone the project, navigate into the project folder and run:
 
 ```bash
-bun i
+npm install
 ```
 
 ### The manifest
@@ -120,7 +117,7 @@ You can generate the icons from an image.
 2. Run the following command in the terminal:
 
 ```bash
-bun run icons
+npm run icons
 ```
 
 This will create the icons referenced by default in the manifest of sizes 16, 32, 48 and 128.
@@ -130,7 +127,7 @@ This will create the icons referenced by default in the manifest of sizes 16, 32
 You can test the popup by running the following command in the terminal:
 
 ```bash
-bun run dev
+npm run dev
 ```
 
 This will start a development server and open the popup in your browser as if it were a website. You can then modify the popup and see the changes in real time.
@@ -144,7 +141,7 @@ Thankfully you don't have to get your extension published before being able to t
 To build the extension, run:
 
 ```bash
-bun run build
+npm run build
 ```
 
 ## 🏗️ Project structure
@@ -198,7 +195,7 @@ I added a .prettierrc for contributing. If building for your own purposes, feel 
 To format with the provided configuration, run:
 
 ```bash
-bun run format
+npm run format
 ```
 
 # License

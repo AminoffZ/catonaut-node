@@ -1,14 +1,14 @@
 import { join } from 'path';
 import { readFile, writeFile } from 'fs/promises';
-import { djb2 } from './crypto';
+import { djb2 } from './crypto.js';
 import glob from 'tiny-glob';
 
 /**
  * Remove inline scripts and styles from the generated HTML files.
  *
- * @param directory The directory to remove inline scripts and styles from.
+ * @param {string} directory The directory to remove inline scripts and styles from.
  */
-async function removeInlineScriptAndStyle(directory: string) {
+export async function removeInlineScriptAndStyle(directory) {
   console.log('Removing Inline Scripts and Styles');
   const scriptRegx = /<script[^>]*>([\s\S]+?)<\/script>/g;
   const styleRegx = /<style[^>]*>([\s\S]+?)<\/style>/g;
@@ -57,5 +57,3 @@ async function removeInlineScriptAndStyle(directory: string) {
     await writeFile(file, f);
   }
 }
-
-await removeInlineScriptAndStyle('../dist');

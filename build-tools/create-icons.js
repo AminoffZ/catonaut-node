@@ -16,7 +16,7 @@ function createIcons() {
         width: size,
         height: size,
       },
-      (err, res) => {
+      (err, _) => {
         if (err) throw err;
       }
     );
